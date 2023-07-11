@@ -1,0 +1,161 @@
+@font-face {
+  font-family: Vazir-Medium;
+  src: url(fonts/Vazir-Medium.eot) format("eot"),
+    url(fonts/Vazir-Medium.ttf) format("ttf"),
+    url(fonts/Vazir-Medium.woff) format("woff"),
+    url(fonts/Vazir-Medium.woff2) format("woff2");
+  font-weight: 700;
+  font-style: normal;
+}
+*,
+body {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Vazir-Medium;
+}
+
+ul,
+li,
+ol {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+
+.sky {
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  overflow-x: hidden;
+  position: relative;
+}
+.road {
+  width: 900%;
+  height: 999px;
+  z-index: 1;
+  background-repeat: repeat-x;
+  position: absolute;
+  display: block;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  animation: road 5s linear infinite;
+}
+.city {
+  width: 400%;
+  height: 800px;
+  position: absolute;
+  z-index: 2;
+  background-repeat: repeat-x;
+  display: block;
+  top: 31px;
+  bottom: 0px;
+  left: 0;
+  right: 0;
+  animation: city 6s linear infinite;
+}
+.car {
+  width: 40%;
+  height: 40%;
+  top: 610px;
+  z-index: 5;
+  position: absolute;
+  animation: car 7s linear infinite;
+  filter: hue-rotate(358deg) drop-shadow(24px 23px 38px black);
+}
+
+@keyframes car {
+  from {
+    filter: hue-rotate(358deg) drop-shadow(24px 23px 38px black);
+  }
+  to {
+    filter: hue-rotate(330deg) drop-shadow(24px 23px 38px black);
+  }
+}
+.wheel-left {
+  position: absolute;
+  width: 131px;
+  height: 131px;
+  z-index: 99;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  top: 0;
+}
+.wheel-right {
+  position: absolute;
+  width: 110px;
+  height: 110px;
+  z-index: 99;
+  right: 0px;
+  left: 495px;
+  bottom: 0;
+  top: 780px;
+  animation: right-wheel 1s linear infinite;
+}
+@keyframes right-wheel {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(650deg);
+  }
+}
+
+@keyframes road {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-8000px);
+  }
+}
+@keyframes city {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-2500px);
+  }
+}
+.wheel-left {
+  position: absolute;
+  width: 108px;
+  height: 108px;
+  z-index: 99;
+  right: 0px;
+  left: 133px;
+  bottom: 0;
+  top: 778px;
+  animation: left-wheel 1s linear infinite;
+}
+@keyframes left-wheel {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(650deg);
+  }
+}
+
+@keyframes road {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-8000px);
+  }
+}
+@keyframes city {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-2500px);
+  }
+}
