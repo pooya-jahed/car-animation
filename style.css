@@ -48,7 +48,7 @@ a {
   animation: road 5s linear infinite;
 }
 .city {
-  width: 427vh;
+  width: 600vh;
   height: 127vh;
   position: absolute;
   z-index: 2;
