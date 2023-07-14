@@ -27,52 +27,47 @@ a {
 }
 
 .sky {
- width: 457vh;
-    height: 100vh;
-    background-size: cover;
-    background-position: center;
-    overflow-x: hidden;
-    position: relative;
-
+  width: 457vh;
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  overflow-x: hidden;
+  position: relative;
 }
 .road {
-    
-    width: 1165vh;
-    height: 189vh;
-    z-index: 1;
-    background-repeat: repeat-x;
-    position: absolute;
-    display: block;
-    bottom: 0;
-    top: -45vh;
-    right: 0;
-    left: 0;
-    animation: road 5s linear infinite;
-
+  width: 1485vh;
+  height: 189vh;
+  z-index: 1;
+  background-repeat: repeat-x;
+  position: absolute;
+  display: block;
+  bottom: 0;
+  top: -45vh;
+  right: 0;
+  left: 0;
+  animation: road 5s linear infinite;
+}
 .city {
-     width: 427vh;
-    height: 127vh;
-    position: absolute;
-    z-index: 2;
-    background-repeat: repeat-x;
-    display: block;
-    top: 0.6vh;
-    bottom: 0px;
-    left: 0;
-    right: 0;
-    animation: city 6s linear infinite;
+  width: 427vh;
+  height: 127vh;
+  position: absolute;
+  z-index: 2;
+  background-repeat: repeat-x;
+  display: block;
+  top: 0.6vh;
+  bottom: 0px;
+  left: 0;
+  right: 0;
+  animation: city 6s linear infinite;
 }
 .car {
-width: 73vh;
-    height: 45vh;
-    top: 610px;
-    z-index: 5;
-    position: absolute;
-    animation: car 7s linear infinite;
-    filter: hue-rotate(358deg) drop-shadow(24px 23px 38px black);
-  
-
-    
+  width: 73vh;
+  height: 45vh;
+  top: 100vh;
+  z-index: 5;
+  position: absolute;
+  animation: car 7s linear infinite;
+  filter: hue-rotate(358deg) drop-shadow(24px 23px 38px black);
 }
 
 @keyframes car {
@@ -83,27 +78,30 @@ width: 73vh;
     filter: hue-rotate(330deg) drop-shadow(24px 23px 38px black);
   }
 }
+.wheels {
+  position: absolute;
+}
 .wheel-left {
- position: absolute;
-    width: 13.1vh;
-    height: 13vh;
-    z-index: 99;
-    right: 0px;
-    left: 11.4vh;
-    bottom: 0;
-    top: 18.8vh;
-    animation: left-wheel 1s linear infinite;
+  position: absolute;
+  width: 13.1vh;
+  height: 13vh;
+  z-index: 99;
+  right: 0px;
+  left: 11.4vh;
+  bottom: 0;
+  top: 18.8vh;
+  animation: left-wheel 1s linear infinite;
 }
 .wheel-right {
-      position: absolute;
-    width: 12.1vh;
-    height: 12vh;
-    z-index: 99;
-    right: 0px;
-    left: 47vh;
-    bottom: 0;
-    top: 19.7vh;
-    animation: right-wheel 1s linear infinite;
+  position: absolute;
+  width: 11.7vh;
+  height: 11.9vh;
+  z-index: 99;
+  right: 0px;
+  left: 46.8vh;
+  bottom: 0;
+  top: 20.3vh;
+  animation: right-wheel 1s linear infinite;
 }
 @keyframes right-wheel {
   from {
@@ -130,17 +128,7 @@ width: 73vh;
     transform: translateX(-2500px);
   }
 }
-.wheel-left {
-  position: absolute;
-  width: 108px;
-  height: 108px;
-  z-index: 99;
-  right: 0px;
-  left: 133px;
-  bottom: 0;
-  top: 778px;
-  animation: left-wheel 1s linear infinite;
-}
+
 @keyframes left-wheel {
   from {
     transform: rotate(0deg);
