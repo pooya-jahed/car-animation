@@ -27,46 +27,52 @@ a {
 }
 
 .sky {
-  width: 100%;
-  height: 100vh;
-  background-size: cover;
-  background-position: center;
-  overflow-x: hidden;
-  position: relative;
+ width: 457vh;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    overflow-x: hidden;
+    position: relative;
+
 }
 .road {
-  width: 900%;
-  height: 999px;
-  z-index: 1;
-  background-repeat: repeat-x;
-  position: absolute;
-  display: block;
-  bottom: 0;
-  right: 0;
-  left: 0;
-  animation: road 5s linear infinite;
-}
+    
+    width: 1165vh;
+    height: 189vh;
+    z-index: 1;
+    background-repeat: repeat-x;
+    position: absolute;
+    display: block;
+    bottom: 0;
+    top: -45vh;
+    right: 0;
+    left: 0;
+    animation: road 5s linear infinite;
+
 .city {
-  width: 400%;
-  height: 800px;
-  position: absolute;
-  z-index: 2;
-  background-repeat: repeat-x;
-  display: block;
-  top: 31px;
-  bottom: 0px;
-  left: 0;
-  right: 0;
-  animation: city 6s linear infinite;
+     width: 427vh;
+    height: 127vh;
+    position: absolute;
+    z-index: 2;
+    background-repeat: repeat-x;
+    display: block;
+    top: 0.6vh;
+    bottom: 0px;
+    left: 0;
+    right: 0;
+    animation: city 6s linear infinite;
 }
 .car {
-  width: 40%;
-  height: 40%;
-  top: 610px;
-  z-index: 5;
-  position: absolute;
-  animation: car 7s linear infinite;
-  filter: hue-rotate(358deg) drop-shadow(24px 23px 38px black);
+width: 73vh;
+    height: 45vh;
+    top: 610px;
+    z-index: 5;
+    position: absolute;
+    animation: car 7s linear infinite;
+    filter: hue-rotate(358deg) drop-shadow(24px 23px 38px black);
+  
+
+    
 }
 
 @keyframes car {
@@ -78,25 +84,26 @@ a {
   }
 }
 .wheel-left {
-  position: absolute;
-  width: 131px;
-  height: 131px;
-  z-index: 99;
-  right: 0;
-  left: 0;
-  bottom: 0;
-  top: 0;
+ position: absolute;
+    width: 13.1vh;
+    height: 13vh;
+    z-index: 99;
+    right: 0px;
+    left: 11.4vh;
+    bottom: 0;
+    top: 18.8vh;
+    animation: left-wheel 1s linear infinite;
 }
 .wheel-right {
-  position: absolute;
-  width: 110px;
-  height: 110px;
-  z-index: 99;
-  right: 0px;
-  left: 495px;
-  bottom: 0;
-  top: 780px;
-  animation: right-wheel 1s linear infinite;
+      position: absolute;
+    width: 12.1vh;
+    height: 12vh;
+    z-index: 99;
+    right: 0px;
+    left: 47vh;
+    bottom: 0;
+    top: 19.7vh;
+    animation: right-wheel 1s linear infinite;
 }
 @keyframes right-wheel {
   from {
